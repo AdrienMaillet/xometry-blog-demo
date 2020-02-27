@@ -4,6 +4,7 @@
 
 exports.linkResolver = function linkResolver(doc) {
   // Route for blog posts
+  console.log("doc type", doc.type)
   if (doc.type === 'post') {
     return '/blog/' + doc.uid;
   }
